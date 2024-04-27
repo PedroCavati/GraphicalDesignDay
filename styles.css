@@ -105,17 +105,44 @@ body {
 
 @keyframes expand__main__circle {
     from {
-      width: 0; /* Tamanho inicial */
-      height: 0; /* Tamanho inicial */
+        width: 0; /* Tamanho inicial */
+        height: 0; /* Tamanho inicial */
     }
     to {
-      width: 650px; /* Tamanho final */
-      height: 650px; /* Tamanho final */
+        width: 650px; /* Tamanho final */
+        height: 650px; /* Tamanho final */
     }
-  }
+}
 
 .main__text {
     margin: 20vh 60vh 0 60vh;
+    font-size: 26px;
+    text-align: justify;
+}
+
+.image__paul {
+    border-radius: 50%;
+    margin: 5vh 10vh 0 30vh;
+}
+
+.text__paul {
+    margin: 16vh 60vh 0 0;
+    font-size: 26px;
+    text-align: justify;
+}
+
+.main {
+    display: flex;
+}
+
+.image__dieter {
+    border-radius: 50%;
+    margin: 5vh 30vh 0 10vh;
+    height: 442px;
+}
+
+.text__dieter {
+    margin: 16vh 10vh 0 30vh;
     font-size: 26px;
     text-align: justify;
 }
