@@ -1,0 +1,148 @@
+body {
+    background-color: #e6e6e6;
+}
+
+.header {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60vh 0 40vh;
+}
+
+.header__selected {
+    text-decoration: none; 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header__link {
+    text-decoration: none; 
+    color: black;
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+}
+
+.header__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.header__link:hover::after {
+    width: 110%;
+}
+
+.green::after {
+    background-color: #A1C6A7;
+}
+
+.red::after {
+    background-color: #9C3046;
+}
+
+.blue::after {
+    background-color: #394582;
+}
+
+.circle__green {
+    background-color: #A1C6A7;
+}
+
+.circle__red {
+    background-color: #9C3046;
+}
+
+.circle__blue {
+    background-color: #394582;
+}
+
+.circle {
+    z-index: -2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5vh;
+    left: 45vh;
+    animation: expand 2s ease-in-out forwards;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes expand {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(50);
+    }
+}
+
+.circle__main {
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: expand__main__circle 2s ease forwards;
+}
+
+.circle__index {
+    left: 58%;
+    top: 45%;
+}
+
+.circle__icod {
+    left: 42%;
+    top: 42%;
+}
+
+@keyframes expand__main__circle {
+    from {
+        width: 0; /* Tamanho inicial */
+        height: 0; /* Tamanho inicial */
+    }
+    to {
+        width: 650px; /* Tamanho final */
+        height: 650px; /* Tamanho final */
+    }
+}
+
+.main__text {
+    margin: 20vh 60vh 0 60vh;
+    font-size: 26px;
+    text-align: justify;
+}
+
+.image__paul {
+    border-radius: 50%;
+    margin: 5vh 10vh 0 30vh;
+}
+
+.text__paul {
+    margin: 16vh 60vh 0 0;
+    font-size: 26px;
+    text-align: justify;
+}
+
+.main {
+    display: flex;
+}
+
+.image__dieter {
+    border-radius: 50%;
+    margin: 5vh 30vh 0 10vh;
+    height: 442px;
+}
+
+.text__dieter {
+    margin: 16vh 10vh 0 30vh;
+    font-size: 26px;
+    text-align: justify;
+}
