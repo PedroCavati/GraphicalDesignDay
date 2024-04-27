@@ -7,32 +7,41 @@
     <link rel="icon" href="assets/red-circle.png">
 </head>
 <body>
-    <div class="circle circle__red"></div>
+    <!-- Background Circle -->
+    <div class="background__circle red"></div>
     
     <!-- Header -->
     <header class="header">
+        <!-- Title -->
         <h1 class="header__title">dia do<br>design gráfico</h1>
-        <a class="header__link green" href="index.html">início</a>
-        <a class="header__link blue" href="international-council-of-design.html">international<br>council of design</a>
-        <p class="header__selected">designers<br>famosos</p>
+        
+        <!-- Navbar -->
+        <a class="navbar__menu underline__green" href="index.html">início</a>
+        <a class="navbar__menu underline__blue" href="international-council-of-design.html">international<br>council of design</a>
+        <p class="navbar__menu--selected">designers<br>famosos</p>
     </header>
+    
+    <!-- Main -->
     <main>
-        <div class="main">
-        <img class="image__paul" src="assets/paul-rand.jpg">
-        <p class="text__paul"><b>Paul Rand</b> foi um dos designers gráficos mais influentes do século XX. 
-            Ele é conhecido por suas contribuições para a identidade corporativa, criando 
-            logotipos icônicos para empresas como IBM, UPS e ABC. Seu estilo modernista e 
-            minimalista influenciou gerações de designers e definiu os padrões para a prática do design de identidade.
-        </p>
-    </div>
-    <div class="main">
-        <p class="text__dieter"><b>Dieter Rams</b> é um designer industrial alemão conhecido por seu trabalho na empresa de eletrônicos Braun e 
-            por sua filosofia de design centrada no usuário e na simplicidade. Suas criações são conhecidas por seu 
-            estilo minimalista, funcionalidade e atemporalidade. Rams é frequentemente citado como uma grande influência 
-            no design de produtos contemporâneo.
-        </p>
-        <img class="image__dieter" src="assets/dieter-rams.jpg">
-    </div>
+        <!-- Upper Container -->
+        <div class="main__container">
+            <img class="image__paul" src="assets/paul-rand.jpg">
+            <p class="text__paul"><b>Paul Rand</b> foi um dos designers gráficos mais influentes do século XX. 
+                Ele é conhecido por suas contribuições para a identidade corporativa, criando 
+                logotipos icônicos para empresas como IBM, UPS e ABC. Seu estilo modernista e 
+                minimalista influenciou gerações de designers e definiu os padrões para a prática do design de identidade.
+            </p>
+        </div>
+
+        <!-- Lower Container -->
+        <div class="main__container">
+            <p class="text__dieter"><b>Dieter Rams</b> é um designer industrial alemão conhecido por seu trabalho na empresa de eletrônicos Braun e 
+                por sua filosofia de design centrada no usuário e na simplicidade. Suas criações são conhecidas por seu 
+                estilo minimalista, funcionalidade e atemporalidade. Rams é frequentemente citado como uma grande influência 
+                no design de produtos contemporâneo.
+            </p>
+            <img class="image__dieter" src="assets/dieter-rams.jpg">
+        </div>
     </main>
     <footer></footer>
 </body>
