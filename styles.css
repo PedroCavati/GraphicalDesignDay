@@ -13,6 +13,7 @@ body {
 .header__selected {
     text-decoration: none; 
     font-size: 28px;
+    font-weight: bold;
 }
 
 .header__link {
@@ -88,10 +89,18 @@ body {
     height: 0;
     border-radius: 50%;
     position: absolute;
-    left: 58%;
-    top: 45%;
     transform: translate(-50%, -50%);
     animation: expand__main__circle 2s ease forwards;
+}
+
+.circle__index {
+    left: 58%;
+    top: 45%;
+}
+
+.circle__icod {
+    left: 42%;
+    top: 42%;
 }
 
 @keyframes expand__main__circle {
